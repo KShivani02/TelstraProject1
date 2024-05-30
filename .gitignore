@@ -13,6 +13,8 @@
 
 # misc
 .DS_Store
+.vscode/
+*.user
 .env.local
 .env.development.local
 .env.test.local
@@ -21,3 +23,18 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Exclude build artifacts
+/build/
+/dist/
+/out/
+*.exe
+*.dll
+
+# Exclude sensitive files
+.env
+.env.local
+.env.*.local
+
+# Include required configuration files
+!config.json
